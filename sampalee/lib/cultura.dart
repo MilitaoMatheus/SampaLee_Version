@@ -11,7 +11,7 @@ class Cultura extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Culinária'),
+        title: const Text('Cultura'),
         backgroundColor: const Color.fromARGB(255, 212, 16, 2), /// Cor de fundo
         foregroundColor: Colors.white,
       ),
@@ -46,21 +46,39 @@ class Cultura extends StatelessWidget {
             'assets/img/background.png', // Imagem de fundo
             fit: BoxFit.cover,
           ),
-          const Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center, //Forma de Alinhamento
-              children: [
+
+          Center(
+            child: ListView(
+              padding: const EdgeInsets.all(50.0),
+              children: const <Widget>[
                 Text(
-                  'Cultura',
+                  "Museu Histórico da Migraçação Brasileira",
+                  textAlign: TextAlign.start,
                   style: TextStyle(
-                    fontSize: 70,
+                    decoration: TextDecoration.underline,
+                    decorationColor: Colors.red, // Cor do sublinhado
+                    decorationThickness: 1, // Espessura do sublinhado
+                    fontSize: 30,
                     fontWeight: FontWeight.bold,
                     color: Color.fromARGB(255, 10, 10, 10),
                   ),
                 ),
+                Text(
+                  'Apresenta ao público como as famílias japonesas chegaram ao brasil, trazendo cultura, e arte em seus três andares',
+                  textAlign: TextAlign.justify,
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.normal,
+                    color:   Color.fromARGB(255, 212, 16, 2),
+                  ),
+                  ),
               ],
             ),
-          ),  
+          ),
+
+          
+          
+          
         ],
       ),
     );
