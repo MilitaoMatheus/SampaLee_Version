@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sampalee/cultura.dart';
+import 'package:sampalee/culinaria.dart';
 
 void main() {
   runApp(const MainApp());
@@ -56,7 +57,7 @@ class _HomePageState extends State<HomePage> {
               // Ação quando "Home" é pressionado
               break;
             case 2:
-              // Ação quando "Culinária" é pressionado
+              Navigator.push(context, MaterialPageRoute(builder: (context) => const Culinaria()));
               break;
             default:
               break;

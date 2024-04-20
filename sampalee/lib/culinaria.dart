@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 
-void cultura() {
-  runApp(const Cultura());
+void culinaria() {
+  runApp(const Culinaria());
 }
 
-class Cultura extends StatelessWidget {
-  const Cultura({super.key});
+class Culinaria extends StatelessWidget {
+  const Culinaria({super.key});
   
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Cultura - Lugares Importantes'),
+        title: const Text('Culinaria - Seus Restaurantes'),
         backgroundColor: const Color.fromARGB(255, 212, 16, 2), /// Cor de fundo
         foregroundColor: Colors.white,
       ),
@@ -52,7 +52,7 @@ class Cultura extends StatelessWidget {
               padding: const EdgeInsets.all(50.0),
               children: const <Widget>[
                 Text(
-                  "MUSEU DA MIGRAÇÃO JAPONESA",
+                  "RESTAURANTE TAKO",
                   textAlign: TextAlign.start,
                   style: TextStyle(
                     decoration: TextDecoration.underline,
@@ -64,7 +64,7 @@ class Cultura extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  'APRESENTA AO PÚBLICO COMO AS FAMÍLIAS JAPONESAS CHEGARAM AO BRASIL, TRAZENDO CULTURA, E ARTE EM SEUS TRÊS ANDARES\n',
+                  'RODÍZIO: SASHIMIS DE ATUM, SALMÃO E PEIXE BRANCO, YAKISOBA E TEMAKI\n',
                   textAlign: TextAlign.justify,
                   style: TextStyle(
                     fontSize: 20,
@@ -74,7 +74,7 @@ class Cultura extends StatelessWidget {
                   ),
 
                   Text(
-                  "TEMPLO LOHAN",
+                  "RESTAURANTE MUGUI",
                   textAlign: TextAlign.start,
                   style: TextStyle(
                     decoration: TextDecoration.underline,
@@ -86,7 +86,30 @@ class Cultura extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  "UM TEMPLO ANTIGO EMPENHADO EM PRODUZIR CONTEÚDO DE BUDISMO, KUNG FU, WU QI, MEDICINA TRADICIONAL, ARTES, FILOSOFIA E LITERATURA CHINESA",
+                  "PRATOS QUENTES: UDON GYOZAS, TEMPURÁ, SOBÁ LÁMEN, MISSOHIRO",
+                  textAlign: TextAlign.justify,
+                  style: TextStyle(
+                    
+                    fontSize: 20,
+                    fontWeight: FontWeight.normal,
+                    color:   Color.fromARGB(255, 212, 16, 2),
+                  ),
+                  ),
+
+                  Text(
+                  "RESTAURANTE TAMPOPO",
+                  textAlign: TextAlign.start,
+                  style: TextStyle(
+                    decoration: TextDecoration.underline,
+                    decorationColor: Colors.red, // Cor do sublinhado
+                    decorationThickness: 1, // Espessura do sublinhado
+                    fontSize: 30,
+                    fontWeight: FontWeight.bold,
+                    color: Color.fromARGB(255, 10, 10, 10),
+                  ),
+                ),
+                Text(
+                  "PANQUECAS FRITAS: BACON, FRANGO E CARNE DE PORCO FEITOS DE TEMPURÁ E MOLHO",
                   textAlign: TextAlign.justify,
                   style: TextStyle(
                     
