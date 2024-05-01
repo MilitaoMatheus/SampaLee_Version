@@ -9,6 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  url_launcher: ^6.2.6
 
 dev_dependencies:
   flutter_test:
@@ -27,3 +28,10 @@ flutter:
   assets:
     - assets/img/background.png
     - assets/img/logolee.png
+
+  fonts:
+    - family: Staatliches
+      fonts:
+        - assets: assets/fonts/Staatliches-Regular.ttf
+
+  
